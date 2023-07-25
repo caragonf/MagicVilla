@@ -22,10 +22,10 @@ namespace MagicVilla_API.Migrations
                     Tarifa = table.Column<double>(type: "float", nullable: false),
                     Ocupantes = table.Column<int>(type: "int", nullable: false),
                     MetrosCuadrados = table.Column<int>(type: "int", nullable: false),
-                    ImagenUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Amenidad = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagenUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Amenidad = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     FechaCreacion = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    FechaActualización = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    FechaActualizacion = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {

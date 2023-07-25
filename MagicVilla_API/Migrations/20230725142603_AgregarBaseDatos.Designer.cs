@@ -34,21 +34,19 @@ namespace MagicVilla_API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Amenidad")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Detalle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaActualización")
+                    b.Property<DateTime?>("FechaActualizacion")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImagenUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MetrosCuadrados")

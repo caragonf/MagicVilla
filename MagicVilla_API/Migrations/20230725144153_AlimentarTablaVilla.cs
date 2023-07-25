@@ -15,7 +15,7 @@ namespace MagicVilla_API.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Villas",
-                columns: new[] { "Id", "Amenidad", "Detalle", "FechaActualización", "FechaCreacion", "ImagenUrl", "MetrosCuadrados", "Nombre", "Ocupantes", "Tarifa" },
+                columns: new[] { "Id", "Amenidad", "Detalle", "FechaActualizacion", "FechaCreacion", "ImagenUrl", "MetrosCuadrados", "Nombre", "Ocupantes", "Tarifa" },
                 values: new object[,]
                 {
                     { 1, "", "Detalle de la Villa...", new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2032), new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(1974), "", 50, "Villa Real", 5, 200.0 },

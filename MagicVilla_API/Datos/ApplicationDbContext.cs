@@ -10,6 +10,7 @@ namespace MagicVilla_API.Datos
 
         }
         public DbSet<Villa> Villas { get; set; }
+        public DbSet<NumeroVilla> NumeroVillas { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,7 +26,7 @@ namespace MagicVilla_API.Datos
                     Tarifa = 200,
                     Amenidad = "",
                     FechaCreacion = DateTime.Now,
-                    FechaActualización = DateTime.Now
+                    FechaActualizacion = DateTime.Now
                 },
                 new Villa()
                 {
@@ -38,7 +39,7 @@ namespace MagicVilla_API.Datos
                     Tarifa = 150,
                     Amenidad = "",
                     FechaCreacion = DateTime.Now,
-                    FechaActualización = DateTime.Now
+                    FechaActualizacion = DateTime.Now
                 }
                 );
         }

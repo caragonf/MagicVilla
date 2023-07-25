@@ -4,19 +4,19 @@ using MagicVilla_API.Repositorio.IRepositorio;
 
 namespace MagicVilla_API.Repositorio
 {
-    public class VillaRepositorio : Repositorio<Villa>, IVillaRepositorio
+    public class NumeroVillaRepositorio : Repositorio<NumeroVilla>, INumeroVillaRepositorio
     {
         private readonly ApplicationDbContext _db;
 
-        public VillaRepositorio(ApplicationDbContext db) : base(db)
+        public NumeroVillaRepositorio(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
 
-        public async Task<Villa> Actualizar(Villa entidad)
+        public async Task<NumeroVilla> Actualizar(NumeroVilla entidad)
         {
             entidad.FechaActualizacion = DateTime.Now;
-            _db.Villas.Update(entidad);
+            _db.NumeroVillas.Update(entidad);
             await _db.SaveChangesAsync();
             return entidad;
         }

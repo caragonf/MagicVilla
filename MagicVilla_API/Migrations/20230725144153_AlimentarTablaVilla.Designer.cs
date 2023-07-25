@@ -34,21 +34,19 @@ namespace MagicVilla_API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Amenidad")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Detalle")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("FechaActualización")
+                    b.Property<DateTime?>("FechaActualizacion")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("ImagenUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("MetrosCuadrados")
@@ -74,7 +72,7 @@ namespace MagicVilla_API.Migrations
                             Id = 1,
                             Amenidad = "",
                             Detalle = "Detalle de la Villa...",
-                            FechaActualización = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2032),
+                            FechaActualizacion = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2032),
                             FechaCreacion = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(1974),
                             ImagenUrl = "",
                             MetrosCuadrados = 50,
@@ -87,7 +85,7 @@ namespace MagicVilla_API.Migrations
                             Id = 2,
                             Amenidad = "",
                             Detalle = "Detalle de la Villa...",
-                            FechaActualización = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2039),
+                            FechaActualizacion = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2039),
                             FechaCreacion = new DateTime(2023, 7, 25, 16, 41, 53, 764, DateTimeKind.Local).AddTicks(2036),
                             ImagenUrl = "",
                             MetrosCuadrados = 40,
