@@ -21,7 +21,7 @@ namespace MagicVilla_API.Controllers
         private readonly IVillaRepositorio _villaRepo;
         private readonly IMapper _mapper;
         protected APIResponse _response;
-
+        
         public VillaController(ILogger<VillaController> logger, IVillaRepositorio villaRepo, IMapper mapper)
         {
             _logger = logger;
